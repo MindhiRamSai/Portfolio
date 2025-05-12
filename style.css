@@ -322,6 +322,8 @@ img {
     .Resumebtn,
 .Projectbtn{
     margin-top: 30px;
+    font-size: 10px;
+    width:100px;
 }
 .Social{
     margin-left: 120px;
