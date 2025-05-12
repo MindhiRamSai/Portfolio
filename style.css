@@ -218,6 +218,9 @@ img {
     background-color: #3b2d63;
     color: #8b5cf6;
 }
+.Dark .Social2:hover,.Social2:hover{
+    color: #8b5cf6;
+}
 .Social{
     width:30%;
     height:30px;
