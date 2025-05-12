@@ -13,6 +13,7 @@
     width: 100%;
     height: 60px;
     z-index: 1000;
+    background-color: white;
 }
 
 .Title {
@@ -28,22 +29,24 @@
 
 .Menu {
     width: 90%;
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
 }
+
 .Buttons {
     width: 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .links {
     text-decoration: none;
     color: black;
     font-weight: bold;
     padding: 3px 6px;
     border-radius: 20px;
-    transition: font-size 0.3s ease,color 0.3s ease,background-color 0.3s ease;
+    transition: font-size 0.3s ease, color 0.3s ease, background-color 0.3s ease;
 }
 
 .links:hover {
@@ -51,10 +54,12 @@
     background-color: #f3e8ff;
     color: #8b5cf6;
 }
-.links:focus{
+
+.links:focus {
     font-size: 17px;
     color: #8b5cf6;
 }
+
 .Name {
     font-size: 24px;
     font-family: 'Courier New', Courier, monospace;
@@ -83,63 +88,246 @@
     border-radius: 50%;
     cursor: pointer;
 }
-.moon{
+
+.moon {
     background-color: #00bcd4;
     visibility: hidden;
 }
-.sun{
-    background-color: #facc15;;
+
+.sun {
+    background-color: #facc15;
+    ;
 }
-.Dark{
+
+.Dark .Nav {
+    background-color: black;
+}
+
+.Dark .links {
+    color: white;
+}
+
+.Dark .links:hover {
+    font-size: 17px;
+    background-color: #f3e8ff;
+    color: #8b5cf6;
+}
+
+.Dark .links:focus {
+    font-size: 17px;
+    color: #8b5cf6;
+}
+
+.Home {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.Profile,
+.Details {
+    position: relative;
+    top: 60px;
+    height: calc(100% - 60px);
+}
+
+.Details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.Profile {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Profile2 {
+    height: 290px;
+    width: 290px;
+    border-radius: 50%;
+    border: 2px solid rgb(169, 165, 165);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgb(77, 77, 77);
+}
+
+img {
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Hello {
+    font-size: 28px;
+    margin-left: 10px;
+}
+
+.Name2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.Role {
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+.Summary {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.Resume {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 10px;
+}
+
+.Resumebtn,
+.Projectbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.Resumebtn:focus,.Projectbtn:focus,.Resumebtn:visited,.Projectbtn:visited{
+    color: black;
+}
+.Resumebtn:hover,.Projectbtn:hover {
+    background-color: #3b2d63;
+    color: #8b5cf6;
+}
+.Social{
+    width:30%;
+    height:30px;
+    margin-top: 30px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Social2{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: black;
+}
+.Dark .Resumebtn,.Dark .Projectbtn{
+    color: white;
+    border: 2px solid white;
+}
+.Dark .Resumebtn:hover,.Dark .Projectbtn:hover{
+    color: #8b5cf6;
+}
+.Dark .Profile2{
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
+.Dark .Social2{
+    color: white;
+}
+.Dark {
     background-color: black;
     color: white;
 }
-@media (max-width:426px){
-    .Title {
-    width: 80%;
-    text-align: center;
-}
 
-.Items {
-    width: 20%;
-    display: flex;
-    align-items: center;
+@media (max-width:426px) {
+    .Title {
+        width: 80%;
+        text-align: center;
+    }
+
+    .Items {
+        width: 20%;
+        display: flex;
+        align-items: center;
+    }
+
+    .Menu {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        width: 100%;
+    }
+
+    .links {
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    .Buttons {
+        width: 100%;
+    }
+
+    .Dropdown {
+        display: flex;
+        font-size: 18px;
+        margin-left: 25px;
+    }
+
+    .moon,
+    .sun {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        font-size: 10px;
+    }
+
+    .Mode {
+        width: 25px;
+        height: 15px;
+        border-radius: 20px;
+    }
+
+    .close {
+        display: none;
+    }
+    .Home{
+        display: block;
+    }
+    .Details,.Profile{
+        width: 100%;
+        height: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .Resumebtn,
+.Projectbtn{
+    margin-top: 30px;
 }
-.Menu{
-    display: none;  
-    flex-direction: column;
+.Social{
+    margin-left: 120px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top:60px;
-    left:0px;
-    width: 100%;
-}
-.links{
-    width:100%;
-    border-radius: 0%;
-}
-.Buttons{
-    width:100%;
-}
-.Dropdown{
-    display: flex;
-    font-size: 18px;
-    margin-left: 25px;
-}
-.moon,
-.sun {
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    font-size: 10px;
-}
-.Mode {
-    width: 25px;
-    height: 15px;
-    border-radius: 20px;
-}
-.close{
-    display: none;
+    gap:5px;
 }
 }
