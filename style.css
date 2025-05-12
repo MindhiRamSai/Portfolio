@@ -279,8 +279,12 @@ img {
         top: 60px;
         left: 0px;
         width: 100%;
+        background-color: white;
     }
 
+    .Dark .Menu{
+        background-color: black;
+    }
     .links {
         width: 100%;
         border-radius: 0%;
