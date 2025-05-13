@@ -117,14 +117,12 @@
     font-size: 17px;
     color: #8b5cf6;
 }
-
 .Home {
     display: flex;
     position: absolute;
     width: 100%;
     height: 100%;
 }
-
 .Profile,
 .Details {
     position: relative;
@@ -253,6 +251,58 @@ img {
 .Dark .Social2{
     color: white;
 }
+.About{
+    position: absolute;
+    top:100%;
+    height: 100%;
+    width:100%;
+}
+.About2{
+    position: relative;
+    top:60px;
+    height: calc(100% - 60px);
+}
+.AboutMe2,.Education2{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 34px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Des{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Des1{
+    margin-top: 20px;
+}
+.Education3{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-top: 60px;
+    height: 200px;
+}
+.Ed{
+    border: 2px solid rgb(210, 210, 210);
+    height: 130px;
+    width:250px;
+    padding:10px 20px 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
+}
+.Ed:hover{
+    transform: scale(1.01);
+    box-shadow: 1px 1px 10px black;
+}
+.Dark .Ed:hover{
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
 .Dark {
     background-color: black;
     color: white;
@@ -342,5 +392,16 @@ img {
     justify-content: center;
     align-items: center;
     gap:5px;
+}
+.About{
+    top:200%;
+}
+.Education3{
+    display: flex;
+    flex-direction: column;
+}
+.Ed{
+    height: 150px;
+    margin-top: 20px;
 }
 }
