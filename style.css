@@ -355,7 +355,7 @@ img {
 .Skills3 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center ;
     gap: 40px;
     align-items: center;
 
@@ -506,12 +506,13 @@ img {
     }
 
     .About {
-        top: 200%;
+        top: 100%;
     }
 
     .Education3 {
         display: flex;
         flex-direction: column;
+        margin-top: 0px;
     }
 
     .Ed {
@@ -519,11 +520,25 @@ img {
         margin-top: 20px;
     }
     .Skills {
-    top: 350%;
+    top: 220%;
 }
 .Sk {
     height: 180px;
     min-width: 300px;
-    margin-top: 60px;
+}
+.Details{
+    height: 60%;
+}
+.Profile {
+    position: relative;
+    top: 0px;
+    height:50%;
+}
+.Skills3{
+    margin-top: 10px;
+    gap:0px;
+}
+.Sk {
+    margin-top: 10px;
 }
 }
