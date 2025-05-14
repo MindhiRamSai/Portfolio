@@ -63,11 +63,11 @@ links.forEach(function (link) {
 window.addEventListener('scroll',function(){
     sections.forEach(function(sec){
         let top = window.scrollY;
-        let offset = sec.offsetTop-150;
+        let offset = sec.offsetTop-550;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
-
         if(top >= offset && top < offset + height) {
+            sec.classList.add("Add")
             links.forEach(link => {
                 link.classList.remove('active');
                 document.querySelector('.Items .Menu a[href*=' + id + ']').classList.add('active');
