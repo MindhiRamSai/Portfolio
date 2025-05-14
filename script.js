@@ -51,7 +51,7 @@ remove.addEventListener('click', function () {
 
 links.forEach(function (link) {
     link.addEventListener('click', function () {
-        if (window.innerWidth < 426) {
+        if (window.innerWidth < 427) {
             menu.style.display = "none"
             remove.style.display = "none"
             list.style.display = "flex"
