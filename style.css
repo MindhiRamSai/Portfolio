@@ -513,3 +513,9 @@ button{
         margin-right: 10%;
     }
 }
+.active{
+    color: #8b5cf6;
+}
+.active:hover{
+    font-size: 14px;
+}
