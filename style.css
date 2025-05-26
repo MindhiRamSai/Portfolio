@@ -513,7 +513,7 @@ button{
         margin-right: 10%;
     }
 }
-.active{
+.active,.Dark .active{
     color: #8b5cf6;
 }
 .active:hover{
